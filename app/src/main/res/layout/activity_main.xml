@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txtbmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bmi_calculator"
+        android:textColor="@color/whitecolor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imgbtnfemale"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/txtbmi"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/containercolor"
+        android:contentDescription="@string/Female"
+        android:scaleType="fitXY"
+        android:src="@drawable/female" />
+
+    <ImageButton
+        android:id="@+id/imgbtnMale"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/txtbmi"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imgbtnfemale"
+        android:backgroundTint="@color/containercolor"
+        android:contentDescription="@string/Male"
+        android:scaleType="fitXY"
+        android:src="@drawable/male" />
+
+    <TextView
+        android:id="@+id/txtfemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtnfemale"
+        android:layout_marginStart="55dp"
+        android:padding="10dp"
+        android:text="@string/Female"
+        android:textColor="@color/whitecolor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtmale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtnMale"
+        android:layout_marginStart="120dp"
+        android:layout_toEndOf="@+id/txtfemale"
+        android:padding="10dp"
+        android:text="@string/Male"
+        android:textColor="@color/whitecolor"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtfemale"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/whitecolor"
+        android:ems="15"
+        android:hint="@string/hintHeight"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/pinkcolor"
+        android:textColorHint="@color/whitecolor"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtheight"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/whitecolor"
+        android:ems="15"
+        android:hint="@string/hintWeight"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/pinkcolor"
+        android:textColorHint="@color/whitecolor"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btncalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtweight"
+        android:backgroundTint="@color/pinkcolor"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/whitecolor"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btncalculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pinkcolor"
+        android:textColor="@color/whitecolor"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+</RelativeLayout>

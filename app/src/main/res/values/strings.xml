@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="bmi_calculator">BMI CALCULATOR</string>
+    <string name="Female">Female</string>
+    <string name="Male">Male</string>
+    <string name="hintHeight">Enter Your Height</string>
+    <string name="hintWeight">Enter Your Weight</string>
+    <string name="calculate">Calculate</string>
+    <string name="overweight">You are OverWeight !! kam Khao Bhai !!</string>
+    <string name="healthy">You are Healthy !! Tu Thik hai Bhai</string>
+    <string name="underweight">You are UnderWeight !! kuchh Khao Bhai</string>
+
+</resources>
